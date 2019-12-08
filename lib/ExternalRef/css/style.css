@@ -1,0 +1,160 @@
+.radio-stylish {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.radio-element, .checkbox-element{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: absolute;
+   
+}
+.checkbox-element {
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    border-radius: 0%;
+
+}
+.stylish-label {
+padding-left: 25px;
+position: relative;
+z-index: 1;
+
+}
+.form-group {
+    position: relative;
+}
+.radio-element:before,
+.checkbox-element:before
+{
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: none;
+    content: '';
+    top: 5px;
+}
+.checkbox-element:before {
+
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    ;
+}
+
+input[type='radio']:checked + .radio-element:before,
+input[type='radio']:checked ~ .radio-element:before
+{
+    display: block;
+    background: #333;
+}
+
+input[type='checkbox']:checked + .checkbox-element:before,
+input[type='checkbox']:checked ~ .checkbox-element:before {
+background: url('../../ExternalRef/images/tick.png') no-repeat center;
+display: block;
+background-size: 40px
+}
+
+.validation-message {
+    display: none;
+    margin: 0;
+}
+.message-sucess {
+    display: block;
+    color: #5cb85c;
+}
+.message-failure {
+color: #ce4844;
+display: block;
+
+}
+.forms-required label:after {
+    content: '*';
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    color:red;
+}
+.form-group label {
+    font-weight: normal;
+}
+.label-bold{
+    font-weight: 500 !important;
+}
+.form-control-datepicker {
+    background: url('../../ExternalRef/images/date-pick.png') no-repeat 98% center;
+    background-size: 20px;
+}
+.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+/* alertify*/
+.alertify .ajs-modal{
+    z-index: 999999 !important; 
+}
+.alertify .ajs-dialog{	
+    top: 40px;
+    font:14px/20px BlissLight,Arial;
+}
+.alertify .ajs-header {    
+    background-color: #313e47 !important;
+    color:#fff;
+}
+.alertify-notifier.ajs-top {
+    top: 80px !important;
+}
+.ajs-button{
+	background: #0078d4;
+	border-color: #0078d4;
+	border-radius:5px;
+	color:#fff;
+	padding:10px 0;
+	text-align:center;
+	margin:0 10px 15px !important;
+	font:15px 'BlissPro-Bold',Arial;
+	width:110px;
+	outline:none;
+}
+.ajs-button:hover{
+	background: #0078d4;
+	border-color: #0078d4;
+}
+.ajs-button.ajs-cancel{
+	background:#53545E;
+	border-color:#53545E;
+}
+.ajs-button.ajs-cancel:hover{
+	background:#53545E;
+	border-color:#53545E;
+}
+.alertify .ajs-commands button.ajs-close{
+	margin-top:7px;
+}
+.alertify-notifier .ajs-message.ajs-error{
+	background-color:#0078d4;
+	color:#fff;
+	margin-top:10px;
+	white-space:nowrap;
+}
+.alertify .ajs-body .ajs-content{
+	padding:16px 0;
+}
